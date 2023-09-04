@@ -1,4 +1,4 @@
-export default {
+export const works= {
     name: 'works',
     title: 'Works',
     type: 'document',
@@ -8,7 +8,7 @@ export default {
         title: 'Title',
         type: 'string',
       },
-    
+
       {
         name: 'description',
         title: 'Description',
@@ -32,7 +32,7 @@ export default {
           hotspot: true,
         },
       },
-   
+
       {
         name: 'tags',
         title: 'Tags',
@@ -45,6 +45,6 @@ export default {
          }
        ]
       },
-     
+
     ],
   };

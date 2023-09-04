@@ -1,4 +1,4 @@
-export default{
+export const about={
     name:'abouts',
     title:'Abouts',
     type: 'document',
@@ -21,6 +21,6 @@ export default{
               hotspot: true,
             },
         },
-        
+
     ]
 }

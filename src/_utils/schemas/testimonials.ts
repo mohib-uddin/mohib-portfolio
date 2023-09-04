@@ -1,9 +1,9 @@
-export default {
+export const testimonials= {
     name:'testimonials',
     title:'Testimonials',
     type: 'document',
     fields:[
-        { 
+        {
             name:'name',
             title:'Name',
             type: 'string'
@@ -20,7 +20,7 @@ export default {
             options: {
               hotspot: true,
             },
-        },  
+        },
         {
             name:'feedback',
             title:'Feedback',

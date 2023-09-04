@@ -1,4 +1,4 @@
-export default{
+export const experiences={
     name:'experiences',
     title:'Experiences',
     type: 'document',

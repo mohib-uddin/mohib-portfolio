@@ -1,4 +1,4 @@
-export default {
+export const contact= {
     name:'contact',
     title:'Contact',
     type:'document',

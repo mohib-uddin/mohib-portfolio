@@ -1,4 +1,4 @@
-export default{
+export const brands={
     name:'brands',
     title:'Brands',
     type: 'document',

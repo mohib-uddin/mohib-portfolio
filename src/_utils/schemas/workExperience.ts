@@ -1,4 +1,4 @@
-export default {
+export const workexperience= {
     name:'workExperience',
     title:'Work Experience',
     type:'document',

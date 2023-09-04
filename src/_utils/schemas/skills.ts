@@ -1,4 +1,4 @@
-export default{
+export const skills={
     name:'skills',
     title:'Skills',
     type: 'document',
@@ -21,6 +21,6 @@ export default{
               hotspot: true,
             },
         },
-        
+
     ]
 }
