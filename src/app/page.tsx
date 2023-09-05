@@ -1,7 +1,6 @@
 import {fetchTestimonials} from "@/services/content.service";
-
-import Image from "next/image";
 import Hero from "@/components/hero/hero";
+import WorkTimeline from "@/components/work-timeline/work-timeline";
 export default async function Home() {
     const testimonials=await fetchTestimonials();
     console.log(testimonials)
@@ -18,6 +17,7 @@ export default async function Home() {
         {/*    )*/}
         {/*})}*/}
         <Hero/>
+        <WorkTimeline/>
     </main>
   )
 }
