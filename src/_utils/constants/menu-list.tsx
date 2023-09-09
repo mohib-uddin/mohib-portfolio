@@ -9,8 +9,8 @@ export const menuList=[
         icon:<BiHomeAlt/>
     },
     {
-        name:"About",
-        link:"/about",
+        name:"Blogs",
+        link:"/blogs",
         icon:<BiUser/>
     },
     {

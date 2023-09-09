@@ -9,8 +9,11 @@ export type workExperienceType={
     company:string;
     start:Date;
     end:Date;
-    desc:string;
+    desc:string[];
     imgurl:string;
     position:string;
 
+}
+
+export type blogListType={
 }

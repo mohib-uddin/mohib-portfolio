@@ -31,7 +31,9 @@ export const workexperience= {
             {
                 name:'desc',
                 title:'Desc',
-                type:'string'
+                type:'array',
+                of: [{type: 'string'}]
+
             },
         {
             name:'imgurl',
@@ -41,5 +43,6 @@ export const workexperience= {
                 hotspot: true,
             },
         },
+
     ]
 }

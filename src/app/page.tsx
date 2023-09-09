@@ -1,11 +1,13 @@
 import {fetchTestimonials} from "@/services/content.service";
 import Hero from "@/components/hero/hero";
 import WorkTimeline from "@/components/work-timeline/work-timeline";
+import Social from "@/components/social/social";
+import StarsCanvas from "@/components/3d/stars";
 export default async function Home() {
     const testimonials=await fetchTestimonials();
     console.log(testimonials)
   return (
-    <main>
+    <div>
         {/*{testimonials.map((e,index)=>{*/}
         {/*    return(*/}
         {/*        <div key={index}>*/}
@@ -16,8 +18,10 @@ export default async function Home() {
         {/*        </div>*/}
         {/*    )*/}
         {/*})}*/}
+        <StarsCanvas/>
         <Hero/>
+        <Social/>
         <WorkTimeline/>
-    </main>
+    </div>
   )
 }

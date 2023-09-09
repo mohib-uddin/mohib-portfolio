@@ -22,3 +22,13 @@ export const fetchWorkExperiences=():Promise<workExperienceType[]>=>{
   "imgurl": imgurl.asset->url,
     }`)
 }
+
+export const fetchBlogs=():Promise<workExperienceType[]>=>{
+    return client.fetch(groq`*[_type=="blogPost"]{
+     title,
+     slug,
+     publishedAt,
+     blog,
+  "imgurl": imgurl.asset->url,
+    }`)
+}

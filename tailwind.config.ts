@@ -7,6 +7,7 @@ const config: Config = {
     './src/containers/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode:"class",
   theme: {
     extend: {
       screens: {
@@ -31,6 +32,7 @@ const config: Config = {
         'color__seven':"#F7F8F8",
       },
       colors: {
+        'dark':'rgb(24,24,27)',
         'color__secondary':"rgb(161 161 170)",
         'color__one': "#737171",
         'color__two': "#545353",

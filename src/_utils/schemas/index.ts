@@ -6,4 +6,5 @@ import {experiences} from "@/_utils/schemas/experiences";
 import {contact} from "@/_utils/schemas/contact";
 import {testimonials} from "@/_utils/schemas/testimonials";
 import {workexperience} from "@/_utils/schemas/workExperience";
-export const schemaTypes = [works, testimonials, brands, about, skills, workexperience, experiences, contact]
+import {blogs} from "@/_utils/schemas/blog";
+export const schemaTypes = [works, testimonials, brands, about, skills, workexperience, experiences, contact,blogs]

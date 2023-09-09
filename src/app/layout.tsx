@@ -1,8 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins} from 'next/font/google'
 import Navbar from "@/components/navbar/navbar";
-const inter = Inter({ subsets: ['latin'],variable:'--font-inter' })
+import Provider from "@/context/providers/theme-provider";
+import ThemeSwitcher from "@/components/theme-switcher/theme-switcher";
+const inter = Poppins({ subsets: ['latin'],variable:'--font-inter',weight:[
+    '700','400','900'
+  ] })
 
 export const metadata: Metadata = {
   title: 'Develop With Mohib',
@@ -15,10 +19,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-    <body className={'bg-primary__dark'}>
-      <div className={inter.className}>{children}</div>
-    <Navbar/>
+    <html lang="en" suppressHydrationWarning={true}>
+    <body  className={`${inter.className} dark:bg-primary__dark`} >
+    <Provider>
+      <ThemeSwitcher/>
+      <main>{children}</main>
+      <Navbar/>
+    </Provider>
     </body>
     </html>
   )
