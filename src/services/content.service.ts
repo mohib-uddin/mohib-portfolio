@@ -1,6 +1,7 @@
 import {client} from "@/_utils/config/sanity-config";
 import {groq} from "next-sanity";
-import {testimonialsType, workExperienceType} from "@/_utils/types";
+import {projectType, testimonialsType, workExperienceType} from "@/_utils/types";
+import projects from "@/components/projects/projects";
 
 export const fetchTestimonials=():Promise<testimonialsType[]>=>{
     return client.fetch(groq`*[_type=="testimonials"]{
@@ -30,5 +31,16 @@ export const fetchBlogs=():Promise<workExperienceType[]>=>{
      publishedAt,
      blog,
   "imgurl": imgurl.asset->url,
+    }`)
+}
+
+export const fetchProjects=():Promise<projectType[]>=>{
+    return client.fetch(groq`*[_type=="works"]{
+     title,
+     description,
+     projectLink,
+     codeLink,
+  "imgUrl": imgUrl.asset->url,
+  tags
     }`)
 }

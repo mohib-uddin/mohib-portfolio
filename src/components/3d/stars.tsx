@@ -7,7 +7,7 @@ import {random} from "maath";
 // @ts-ignore
 const Stars=(props)=>{
 const ref=useRef();
-const sphere=random.inSphere(new Float32Array(5000),{radius:1.2})
+const sphere=random.inSphere(new Float32Array(6000),{radius:1.2})
     useFrame((state,delta)=>{
         // @ts-ignore
         ref.current.rotation.x-=delta/10;

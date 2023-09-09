@@ -15,5 +15,11 @@ export type workExperienceType={
 
 }
 
-export type blogListType={
+export type projectType={
+    title:string;
+    description:string;
+    codeLink:string;
+    projectLink:string;
+    imgUrl:string;
+    tags:string[];
 }
