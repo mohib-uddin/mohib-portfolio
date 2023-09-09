@@ -10,7 +10,7 @@ export type workExperienceType={
     start:Date;
     end:Date;
     desc:string[];
-    imgurl:string;
+    imgurl:string[];
     position:string;
 
 }

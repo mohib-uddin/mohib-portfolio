@@ -3,7 +3,7 @@ import {workExperienceType} from "@/_utils/types";
 import {motion} from "framer-motion";
 import {useState} from "react";
 const SelectedExperience=({experience}:{experience:workExperienceType[]})=>{
-    const [selectedExperience,setSelectedExperience]=useState(experience[0]);
+    const [selectedExperience,setSelectedExperience]=useState<workExperienceType>(experience[0]);
 
     return(
         <div className={'flex w-full p-4 mt-4 m-auto  h-[200px] gap-3 dark:text-white desktop:flex-row  flex-col'}>
@@ -21,7 +21,7 @@ const SelectedExperience=({experience}:{experience:workExperienceType[]})=>{
                 <h5 className={'font-[700] overlay'}>{selectedExperience.position}</h5>
                 <p className={'text-sm text-color__secondary p-1'}>{`${selectedExperience.start}`} - {selectedExperience.end?`${selectedExperience.end}`:"Ongoing"}</p>
                 <ul className={'text-base dark:text-color__secondary p-2'}>
-                    {selectedExperience.desc?.map((e,index)=>{
+                    {selectedExperience?.desc?.map((e,index)=>{
                         return(
                             <li className={'mt-4 list-disc'} key={index}>{e}</li>
                         )
