@@ -36,3 +36,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.border-overlay{
+    border-bottom: 2px solid #4776e6;
+}

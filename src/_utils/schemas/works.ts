@@ -45,6 +45,26 @@ export const works= {
          }
        ]
       },
-
+      {
+        name: 'slug',
+        title: 'Slug',
+        type: 'slug',
+        options: {
+          source: 'title',
+          maxLength: 200,
+        },
+      },
+      {
+        name: 'dependencies',
+        title: 'Dependencies',
+        type:'array',
+        of: [
+          {
+            name:'dependency',
+            title:'Dependency',
+            type:'string'
+          }
+        ]
+      },
     ],
   };

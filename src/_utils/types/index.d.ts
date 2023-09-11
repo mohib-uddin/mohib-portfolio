@@ -22,4 +22,8 @@ export type projectType={
     projectLink:string;
     imgUrl:string;
     tags:string[];
+    slug:{
+        current:string;
+    };
+    dependencies:string[];
 }

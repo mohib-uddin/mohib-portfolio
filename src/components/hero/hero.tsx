@@ -2,7 +2,7 @@ import AnimatedContainer from "@/components/animations/animated-container";
 
 const Hero=()=>{
  return(
-         <section className={'flex w-full desktop:w-11/12 m-auto  flex-col    desktop:px-desktop__container large__desktop:px-large__screen_container p-4'}>
+         <section className={'mb-60 flex w-full desktop:w-11/12 m-auto  flex-col    desktop:px-desktop__container large__desktop:px-large__screen_container p-4'}>
              <AnimatedContainer initial={{y:-10,opacity:0}} animate={{ y: 10,opacity:1 }} transition={{ ease: "easeIn", duration: .5 }}  >
                  <h2 className={'mt-20 font-[700] overlay  large__desktop:leading-snug  dark:text-white  text-5xl large__desktop:text-6xl'}>Mohib Uddin.</h2>
              </AnimatedContainer>

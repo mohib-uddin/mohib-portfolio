@@ -30,3 +30,18 @@ export const menuList=[
     }
 
 ]
+
+export const projectFilter=[
+    {
+        title:'Next 13'
+    },
+    {
+        title:'Reactjs'
+    },
+    {
+        title:'React Native'
+    },
+    {
+        title:'Full Stack'
+    },
+];

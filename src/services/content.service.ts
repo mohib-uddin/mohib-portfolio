@@ -40,7 +40,22 @@ export const fetchProjects=():Promise<projectType[]>=>{
      description,
      projectLink,
      codeLink,
+     slug,
   "imgUrl": imgUrl.asset->url,
   tags
     }`)
 }
+export const fetchProjectBySlug = (slug: string): Promise<projectType | null> => {
+    return client
+        .fetch(
+            groq`*[_type=="works" && slug.current == "${slug}"]{
+        title,
+        description,
+        projectLink,
+        codeLink,
+        slug,
+        "imgUrl": imgUrl.asset->url,
+        tags,
+        dependencies
+      }[0]`)
+};

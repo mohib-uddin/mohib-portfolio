@@ -13,6 +13,7 @@ export const workexperience= {
                 title:'Company',
                 type:'string'
             },
+
         {
             name:'start',
             title:'start',
@@ -28,13 +29,13 @@ export const workexperience= {
             title:'position',
             type:'string'
         },
-            {
-                name:'desc',
-                title:'Desc',
-                type:'array',
-                of: [{type: 'string'}]
+        {
+            name:'desc',
+            title:'Desc',
+            type:'array',
+            of: [{type: 'string'}]
 
-            },
+        },
         {
             name:'imgurl',
             title:'ImgUrl',

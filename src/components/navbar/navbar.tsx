@@ -12,7 +12,6 @@ const Navbar=()=>{
                          <NavLink link={e.link} icon={e.icon} key={index}/>
                         )
                     })}
-
                 </div>
             </div>
         </nav>
