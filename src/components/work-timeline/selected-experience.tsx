@@ -21,11 +21,11 @@ const SelectedExperience=({experience}:{experience:workExperienceType[]})=>{
                 <h5 className={'font-[700] overlay'}>{selectedExperience.position}</h5>
                 <p className={'text-sm text-color__secondary p-1'}>{`${selectedExperience.start}`} - {selectedExperience.end?`${selectedExperience.end}`:"Ongoing"}</p>
                 <ul className={'text-base dark:text-color__secondary p-2'}>
-                    {selectedExperience?.desc?.map((e,index)=>{
-                        return(
-                            <li className={'mt-4 list-disc'} key={index}>{e}</li>
-                        )
-                    })}
+                    {/*{selectedExperience?.desc?.map((e,index)=>{*/}
+                    {/*    return(*/}
+                    {/*        <li className={'mt-4 list-disc'} key={index}>{e}</li>*/}
+                    {/*    )*/}
+                    {/*})}*/}
                 </ul>
             </motion.div>
         </div>
