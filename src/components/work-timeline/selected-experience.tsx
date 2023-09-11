@@ -20,7 +20,7 @@ const SelectedExperience=({experience}:{experience:workExperienceType[]})=>{
             <motion.div key={selectedExperience.name} initial={{y:-10,opacity:0}} animate={{y:10,opacity:1}} transition={{duration:1,ease:"easeIn"}} className={'w-full desktop:w-1/2 text-xl'}>
                 <h5 className={'font-[700] overlay'}>{selectedExperience.position}</h5>
                 <p className={'text-sm text-color__secondary p-1'}>{`${selectedExperience.start}`} - {selectedExperience.end?`${selectedExperience.end}`:"Ongoing"}</p>
-                {selectedExperience&&<ul className={'text-base dark:text-color__secondary p-2'}>
+                {selectedExperience.desc[0]&&<ul className={'text-base dark:text-color__secondary p-2'}>
                     {selectedExperience?.desc?.map((e,index)=>{
                         return(
                             <li className={'mt-4 list-disc'} key={index}>{e}</li>
