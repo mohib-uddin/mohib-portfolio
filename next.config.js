@@ -15,5 +15,6 @@ module.exports = {
     ...nextConfig,
     experimental: {
         serverActions: true,
+        serverComponentsExternalPackages:["mongoose"]
     },
 }

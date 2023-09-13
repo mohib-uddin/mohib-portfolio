@@ -3,7 +3,8 @@ import type { Metadata } from 'next'
 import { Poppins} from 'next/font/google'
 import Navbar from "@/components/navbar/navbar";
 import Provider from "@/context/providers/theme-provider";
-import ThemeSwitcher from "@/components/theme-switcher/theme-switcher";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const inter = Poppins({ subsets: ['latin'],variable:'--font-inter',weight:[
     '700','400','900'
   ] })
@@ -23,6 +24,7 @@ export default function RootLayout({
     <body  className={`${inter.className}`} >
     <Provider>
       <main>{children}</main>
+      <ToastContainer/>
       <Navbar/>
     </Provider>
     </body>
