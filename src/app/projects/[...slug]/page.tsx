@@ -1,3 +1,4 @@
+import BackButton from "@/components/navbar/back-button";
 
 
 export async function generateMetadata({ params }: { params:{slug:string} }) {
@@ -21,9 +22,12 @@ const Project=async({ params }: { params:{slug:string} })=>{
     console.log(project)
 
     return (
-       <article className={'desktop:px-desktop__container large__desktop:px-large__screen_container large__mobile::px-mobile__container'}>
+       <article className={'mt-4 desktop:px-desktop__container large__desktop:px-large__screen_container large__mobile::px-mobile__container'}>
            <StarsCanvas/>
-           <h2 className={'font-[700] text-4xl'}>{project?.title}</h2>
+           <div className={'flex items-center gap-4'}>
+               <BackButton/>
+               <h2 className={'font-[700] text-4xl'}>{project?.title}</h2>
+           </div>
            {project?.imgUrl&&<Image className={'mt-10 rounded-2xl object-cover mb-2'} width={800} height={50} alt={`${"testimonial"}`} src={project.imgUrl}/>}
            <h4 className={'font-[700] text-2xl my-4'}>Project Overview:</h4>
            <p>{project?.description}</p>

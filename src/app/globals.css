@@ -15,7 +15,9 @@
     background: hsla(0,0%,100%,.08);
 
 }
-
+.light-glass{
+background: rgb(243 244 246);
+}
 .red-overlay{
     background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
@@ -39,4 +41,26 @@
 
 .border-overlay{
     border-bottom: 2px solid #4776e6;
+}
+
+.article p{
+    @apply mt-4 text-color__secondary;
+}
+
+.article h4{
+}
+.article li{
+    @apply mt-4  text-color__secondary;
+}
+.article h3{
+    @apply mt-4 text-base font-[400];
+}
+.article h2{
+    @apply mt-4 text-xl font-[700];
+}
+.article h1{
+    @apply text-2xl font-[700];
+}
+
+.article b{
 }

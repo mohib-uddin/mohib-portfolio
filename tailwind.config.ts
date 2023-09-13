@@ -30,7 +30,10 @@ const config: Config = {
         'color__five':"#EBEBEB",
         'color__six':"#3E1F62",
         'color__seven':"#F7F8F8",
-      },
+        'glass': "hsla(0,0%,100%,.08)",
+        'glass-light': "rgb(243 244 246)",
+
+},
       colors: {
         'dark':'rgb(24,24,27)',
         'color__secondary':"rgb(161 161 170)",

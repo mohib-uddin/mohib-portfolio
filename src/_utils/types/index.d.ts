@@ -27,3 +27,19 @@ export type projectType={
     };
     dependencies:string[];
 }
+
+export type aboutType={
+    title:string;
+    description:string;
+    imgUrl:string;
+}
+
+export type blogType={
+    imgUrl:string;
+    title:string;
+    slug:{
+        current:string;
+    },
+    publishedAt:string;
+    body:any;
+}

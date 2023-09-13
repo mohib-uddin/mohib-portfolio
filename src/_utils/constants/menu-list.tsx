@@ -24,8 +24,8 @@ export const menuList=[
         icon:<BsBriefcase/>
     },
     {
-        name:"Contact Us",
-        link:"/contact",
+        name:"Theme",
+        link:"/theme",
         icon:<BsChatSquare/>
     }
 

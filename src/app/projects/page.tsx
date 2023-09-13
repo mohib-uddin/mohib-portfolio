@@ -1,14 +1,13 @@
-import Projects from "@/components/projects/projects";
-import {projectFilter} from "@/_utils/constants/menu-list";
+import {fetchProjects} from "@/services/content.service";
+import ProjectFilter from "@/components/projects/project-filter";
 
 
 
-const ProjectPage=()=>{
-    return(
-        <>
-
-            <Projects/>
-        </>
-    )
+const ProjectPage=async()=>{
+    const project=await fetchProjects();
+    console.log(project)
+ return(
+     <ProjectFilter initialProject={project}/>
+ )
 }
 export default ProjectPage;

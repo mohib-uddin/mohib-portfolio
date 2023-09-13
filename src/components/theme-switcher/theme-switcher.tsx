@@ -1,20 +1,12 @@
 "use client";
 import {useTheme} from "next-themes";
-import {BsSunFill} from "react-icons/bs";
-import {BsFillMoonFill} from "react-icons/bs";
-
-import {useEffect, useState} from "react";
-const ThemeSwitcher=()=>{
+const ThemeSwitcher=({props}:any)=>{
  const {resolvedTheme,setTheme}=useTheme();
- const [mounted,setMounted]=useState(false);
- useEffect(()=>{setMounted(true)},[])
- if(!mounted){
-  return null;
- }
+
  return(
-     <button className={`${resolvedTheme==='dark'?'bg-white text-black':'bg-black text-white'} p-2 rounded`} onClick={()=>setTheme(resolvedTheme==='dark'?'light':'dark')}>
-      {resolvedTheme==='dark'?(<BsSunFill/>):(<BsFillMoonFill/>)}
-     </button>
+    <span onClick={()=>resolvedTheme==='light'?setTheme('dark'):setTheme('light')}   className={`flex rounded-full items-center justify-center  cursor-pointer w-[60px] h-[60px]`} >
+        {props.icon}
+    </span>
  )
 }
 export default ThemeSwitcher;

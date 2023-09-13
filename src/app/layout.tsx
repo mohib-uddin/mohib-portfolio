@@ -20,9 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-    <body  className={`${inter.className} dark:bg-primary__dark`} >
+    <body  className={`${inter.className}`} >
     <Provider>
-      <ThemeSwitcher/>
       <main>{children}</main>
       <Navbar/>
     </Provider>

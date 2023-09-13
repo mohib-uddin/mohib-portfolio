@@ -17,7 +17,6 @@ export const blogs= {
             name: 'title',
             title: 'Title',
             type: 'string',
-            // validation: (Rule) => Rule.required(),
         },
         {
             name: 'slug',
@@ -27,34 +26,39 @@ export const blogs= {
                 source: 'title',
                 maxLength: 200,
             },
-            // validation: (Rule) => Rule.required(),
         },
         {
             name: 'publishedAt',
             title: 'Published At',
             type: 'datetime',
-            // validation: (Rule) => Rule.required(),
         },
         {
             name: 'body',
             title: 'Body',
             type: 'array',
-            of: [{ type: 'block' }, { type: 'image' }],
-            // validation: (Rule) => Rule.required(),
+            of: [
+                {
+                    title: 'Block',
+                    type: 'block',
+                    styles: [
+                        { title: 'H1', value: 'h1'},
+                        { title: 'P', value: 'p'},
+                        { title: 'H2', value: 'h2'},
+                        { title: 'H3', value: 'h3'},
+                        { title: 'H4', value: 'h4'},
+                        { title: 'UL', value: 'ul'},
+                        { title: 'OL', value: 'ol'},
+                        { title: 'LI', value: 'li'},
+                        { title: 'A', value: 'a'},
+                    ],
+                }
+            ],
         },
     ],
     preview: {
         select: {
             title: 'title',
             publishedAt: 'publishedAt',
-            author: 'author.name',
         },
-        // prepare(selection) {
-        //     const { title, publishedAt, author } = selection;
-        //     return {
-        //         title,
-        //         subtitle: `By ${author} - ${new Date(publishedAt).toLocaleDateString()}`,
-        //     };
-        // },
     },
 };

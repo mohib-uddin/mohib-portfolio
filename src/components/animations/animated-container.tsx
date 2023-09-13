@@ -8,6 +8,7 @@ type animatedProps={
     initial:any;
     animate:any;
     transition:any;
+
 }
 
 const AnimatedContainer=({children,initial,animate,transition,className}:animatedProps)=>{
